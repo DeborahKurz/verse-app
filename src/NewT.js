@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Header from "./Header.js";
+import NavBar from "./NavBar.js";
 import './App.css';
 import VerseCard from "./VerseCard.js";
 
@@ -22,7 +22,7 @@ function NewT(){
     return (
         <div className="App">
             <header>
-                <Header />
+                <NavBar />
             </header>
             <div>
                 {verses.map((verse)=>(
