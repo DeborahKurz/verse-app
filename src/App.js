@@ -5,8 +5,6 @@ import Form from "./Form.js";
 import NewT from "./NewT.js";
 import OldT from "./OldT.js";
 
-//Create a VerseCard Component that renders info about each verse
-//in Old and New Components, pass down data array from index.js and map through verses, handing them off to VerseCard to be rendered.
 //Clean up Components/files in this app. Get rid of what I'm not using.
 //Verify requirements
 //Add ReadMe file

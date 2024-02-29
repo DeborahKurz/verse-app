@@ -42,7 +42,7 @@ function Form({onAddVerse}){
                 <input type="text" value={reference} onChange={(e)=> setReference(e.target.value)}></input>
                 <h4>Verse (Example: For God so loved the world that He...):</h4>
                 <input type="text" value={verse} onChange={(e)=> setVerse(e.target.value)}></input>
-                <h4>URL of Copied Bible Verse:</h4>
+                <h4>URL of Copied Bible Verse (if no URL, skip this step):</h4>
                 <input type="text" value={url} onChange={(e)=> setUrl(e.target.value)}></input>
                 <div>
                     <button type="submit">Add My Bible Verse To My List!</button>
