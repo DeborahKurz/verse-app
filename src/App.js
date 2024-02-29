@@ -3,6 +3,8 @@ import NavBar from "./NavBar.js";
 import React, {useState, useEffect} from "react";
 import Form from "./Form.js";
 import Header from "./Header.js";
+import NewT from "./NewT.js";
+import OldT from "./OldT.js";
 
 //Create a VerseCard Component that renders info about each verse
 //in Old and New Components, pass down data array from index.js and map through verses, handing them off to VerseCard to be rendered.
