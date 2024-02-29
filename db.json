@@ -1,16 +1,46 @@
 {
-    "toys": [
-      {
-        "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
-      },
-      {
-        "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
-      }
-    ]
-  }
+  "verses": [
+    {
+      "id": 1,
+      "testament": "Old",
+      "reference": "Exodus 33:14 NLT",
+      "verse": "The Lord replied, \"I will personally go with you, Moses, and I will give you rest—everything will be fine for you.\"",
+      "url": "https://www.biblegateway.com/passage/?search=Exodus%2033&version=NLT"
+    },
+    {
+      "id": 2,
+      "testament": "Old",
+      "reference": "Proverbs 3:5-6 NLT",
+      "verse": "Trust  in the LORD with all your heart; do not depend on your own understanding. Seek His will in all you do, and He will show you which path to take.",
+      "url": "https://www.biblegateway.com/passage/?search=Proverbs+3%3A+5-6&version=NLT"
+    },
+    {
+      "id": 3,
+      "testament": "New",
+      "reference": "Romans 10:9 NLT",
+      "verse": "If you openly declare that Jesus is Lord and believe in your heat that God raised Him from the dead, you will be saved.",
+      "url": "https://www.biblegateway.com/passage/?search=Romans+10%3A+9&version=NLT"
+    },
+    {
+      "id": 4,
+      "testament": "Old",
+      "reference": "Psalms 23:1 NLT",
+      "verse": "The LORD is my shepherd; I have all that I need",
+      "url": "https://www.biblegateway.com/passage/?search=Psalms+23&version=NLT"
+    },
+    {
+      "id": 5,
+      "testament": "New",
+      "reference": "Romans 3:23-24 NLT",
+      "verse": "For everyone has sinned; we  all fall short of God's glorious standard. Yet God, in His grace, feely makes us right in His sight. He did this through Christ Jesus when He freed us from the penalty for our sins.",
+      "url": ""
+    },
+    {
+      "testament": "Old",
+      "reference": "John 3:16",
+      "verse": "In the beginning God created the heavens and the earth.",
+      "url": "Url",
+      "id": 6
+    }
+  ]
+}
