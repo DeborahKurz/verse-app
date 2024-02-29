@@ -1,19 +1,17 @@
 import React, {useState} from "react";
 import './App.css';
 
-function Form({addVerse}){
+function Form({onAddVerse}){
     const [testament, setTestament] = useState("");
     const [reference, setReference] = useState("");
     const [verse, setVerse] = useState("");
     const [url, setUrl] = useState("");
 
-    console.log("Form", testament, reference, verse, url)
-
     function handleSubmit(event){
         event.preventDefault();
         const configObj = {
             method: 'POST',
-            headers: {'Content-Type': 'applicaton/json'},
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 testament: testament,
                 reference: reference,
@@ -21,11 +19,12 @@ function Form({addVerse}){
                 url: url
             })
         }
-        fetch('http://localhost:3000/movies', configObj)
+
+        fetch('http://localhost:3000/verses', configObj)
         .then(res => res.json())
         .then(newVerse => {
-            addVerse(newVerse)
-            console.log(newVerse);
+            onAddVerse(newVerse)
+
             setTestament("");
             setReference("");
             setVerse("");
@@ -54,42 +53,3 @@ function Form({addVerse}){
 }
 
 export default Form;
-
-
-
-//Use Post request to update statevariable fo the array that lives in index. Pass down a prop? Move to App??
-//Create a VerseCard Component that renders info about each verse
-//in Old and New Components, pass down data array from index.js and map through verses, handing them off to VerseCard to be rendered.
-//Clean up Components/files in this app. Get rid of what I'm not using.
-//Verify requirements
-//Add ReadMe file
-
-
-        // const formData = {
-        //     testament: testament,
-        //     reference: reference,
-        //     verse: verse,
-        //     url: url
-
-
-    //In the beginning God created the heavens and the earth.
-
-
-        // console.log("formData: ", formData)
-        // fetch("http://localhost:3000/verses", {
-        //     method: "POST",
-        //     headers:{
-        //         "Content-Type": "application/json"
-        //     },
-        // //     body: JSON.stringify(formData)
-        // }
-        // )
-        // .then(r=>r.json())
-        // .then(data=>{
-            // console.log(data);
-            // setTestament("");
-            // setReference("");
-            // setVerse("");
-            // setUrl("");
-        // }
-        // )
