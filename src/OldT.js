@@ -16,8 +16,6 @@ function OldT(){
             setVerses(oldTVerses);
         })
     }, [])
-    
-    console.log(verses);
 
     return (
         <div className="App">

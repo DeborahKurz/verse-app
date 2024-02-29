@@ -2,23 +2,23 @@ import Form from "./Form";
 import OldT from "./OldT";
 import NewT from "./NewT";
 import App from "./App.js";
+import ErrorPage from "./ErrorPage.js";
 
 const routes = [
     {
       path: "/",
-      element: <App />
+      element: <App />,
+      errorElement: <ErrorPage />
     },
-    // {
-    //     path: "/form",
-    //     element: <Form />
-    // }, 
     {
       path: "/oldtestament",
-      element: <OldT />
+      element: <OldT />,
+      errorElement: <ErrorPage />
     },
     {
       path: "/newtestament",
-      element: <NewT />
+      element: <NewT />,
+      errorElement: <ErrorPage />
     }
 ];
 

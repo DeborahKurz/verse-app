@@ -16,8 +16,6 @@ function NewT(){
             setVerses(newTVerses);
         })
     }, [])
-    
-    console.log(verses);
 
     return (
         <div className="App">
