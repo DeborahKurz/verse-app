@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header.js";
 import './App.css';
+import VerseCard from "./VerseCard.js";
 
 function NewT(){
     const [verses, setVerses] = useState([]);
@@ -9,15 +10,25 @@ function NewT(){
         fetch("http://localhost:3000/verses")
         .then(r=>r.json())
         .then(verseObjs => {
-            setVerses(verseObjs);
+            const newTVerses = verseObjs.filter((verse) => {
+                return verse.testament.toLowerCase() === "new";
+            });
+            setVerses(newTVerses);
         })
     }, [])
-
-    console.log("NewT", verses)
+    
+    console.log(verses);
 
     return (
         <div className="App">
-            <Header />
+            <header>
+                <Header />
+            </header>
+            <div>
+                {verses.map((verse)=>(
+                    <VerseCard key={verse.reference} verse={verse}/>
+                ))}
+            </div>
         </div>
       );
 }

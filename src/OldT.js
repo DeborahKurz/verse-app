@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header.js";
 import './App.css';
+import VerseCard from "./VerseCard.js";
 
 function OldT(){
     const [verses, setVerses] = useState([]);
@@ -20,7 +21,7 @@ function OldT(){
         <div className="App">
             <Header />
           {verses.map((verse)=>(
-                <h3 key={verse.reference}>{verse.testament}</h3>
+                <VerseCard key={verse.reference} verse={verse}/>
             ))}
         </div>
       );
