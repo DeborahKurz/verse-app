@@ -10,19 +10,25 @@ function OldT(){
         fetch("http://localhost:3000/verses")
         .then(r=>r.json())
         .then(verseObjs => {
-            setVerses(verseObjs);
+            const oldTVerses = verseObjs.filter((verse) => {
+                return verse.testament.toLowerCase() === "old";
+            });
+            setVerses(oldTVerses);
         })
     }, [])
-
-    console.log("OldT", verses)
-
+    
+    console.log(verses);
 
     return (
         <div className="App">
-            <Header />
-          {verses.map((verse)=>(
-                <VerseCard key={verse.reference} verse={verse}/>
-            ))}
+            <header>
+                <Header />
+            </header>
+            <div>
+                {verses.map((verse)=>(
+                    <VerseCard key={verse.reference} verse={verse}/>
+                ))}
+            </div>
         </div>
       );
 }
