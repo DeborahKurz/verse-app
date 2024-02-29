@@ -24,6 +24,7 @@ function App() {
       .then(verseObjs => {
           setVerses(verseObjs);
       })
+      .catch((error) => console.error(error));
   }, [])
 
   console.log("App: ", verses);

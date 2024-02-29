@@ -15,6 +15,7 @@ function NewT(){
             });
             setVerses(newTVerses);
         })
+        .catch((error) => console.error(error));
     }, [])
 
     return (
