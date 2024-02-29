@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Header from "./Header.js";
 import './App.css';
 
 function Form({addVerse}){
@@ -36,7 +35,6 @@ function Form({addVerse}){
 
     return (
         <div className="App">
-            <Header />
             <h2>Fill Out This Form To Add A Verse</h2>
             <form onSubmit={handleSubmit}>
                 <h4>Testament The Bible Verse Is Located In: Old or New?</h4>

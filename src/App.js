@@ -26,12 +26,7 @@ function App() {
       <Header />
       <h2>Welcome!</h2>
       <p>Here you can keep track of your favorite Bible verses. Use the Add A Verse tab to add your favorite verses, then view them in the New Testament and Old Testament tabs in the navigation bar. Below you will see a list of all the verses that have been saved.</p>
-      {verses.map((verse)=>(
-        <div key={verse.reference}>
-          <h4>{verse.reference}</h4>
-          <h6>{verse.verse}</h6>
-        </div>
-      ))}
+      <Form />
     </div>
   );
 }

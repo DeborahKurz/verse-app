@@ -8,12 +8,6 @@ function NavBar(){
                 to="/"
                 className="nav-link"
             >
-                All Verses
-            </NavLink>
-            <NavLink 
-                to="/form"
-                className="nav-link"
-            >
                 Add A Verse
             </NavLink>
             <NavLink 

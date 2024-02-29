@@ -8,10 +8,10 @@ const routes = [
       path: "/",
       element: <App />
     },
-    {
-        path: "/form",
-        element: <Form />
-      },
+    // {
+    //     path: "/form",
+    //     element: <Form />
+    // }, 
     {
       path: "/oldtestament",
       element: <OldT />
